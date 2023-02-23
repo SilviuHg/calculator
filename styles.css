@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 *,
@@ -8,12 +11,21 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  color: white;
+}
+
 .main-container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  height: 500px;
-  width: 310px;
+  margin-top: 50px;
+  height: 460px;
+  width: 280px;
   border: 2px solid black;
-  padding: 5px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 8px;
 }
 
 .top-buttons {
@@ -21,6 +33,7 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 5px;
+  flex-basis: 60%;
 }
 
 .bot-buttons {
@@ -29,13 +42,56 @@ html {
   grid-auto-flow: column;
   grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 5px;
+  flex-basis: 14%;
 }
 
 .display {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  padding-right: 10px;
   text-align: end;
+  flex-basis: 26%;
 }
 
 .btn {
-  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+.btn.btn-0 {
+  border-radius: 30px;
+  background-color: #313833;
+  color: white;
+  text-align: start;
+  padding-left: 22px;
+}
+
+.btn.orange,
+.orange1 {
+  background-color: orange;
+  color: white;
+}
+
+.btn.gray {
+  background-color: #313833;
+  color: white;
+}
+
+.btn.light-gray {
+  background-color: darkgray;
+}
+
+.orange:focus {
+  transition: 0.5s;
+  background-color: white;
+  color: orange;
 }

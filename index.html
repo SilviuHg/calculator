@@ -4,34 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Calculator</title>
   </head>
   <body>
     <div class="main-container">
-      <div class="display">328</div>
+      <div class="display"></div>
       <div class="top-buttons">
-        <button class="btn">AC</button>
-        <button class="btn">+/-</button>
-        <button class="btn">%</button>
-        <button class="btn">÷</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn">x</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn">-</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn">+</button>
+        <button class="btn light-gray" id="AC">AC</button>
+        <button class="btn light-gray" id="plus-minus">+/-</button>
+        <button class="btn light-gray" id="mod">%</button>
+        <button class="btn orange" id="divide">÷</button>
+        <button class="btn gray number" id="7">7</button>
+        <button class="btn gray number" id="8">8</button>
+        <button class="btn gray number" id="9">9</button>
+        <button class="btn orange" id="times">x</button>
+        <button class="btn gray number" id="4">4</button>
+        <button class="btn gray number" id="5">5</button>
+        <button class="btn gray number" id="6">6</button>
+        <button class="btn orange" id="minus">-</button>
+        <button class="btn gray number" id="1">1</button>
+        <button class="btn gray number" id="2">2</button>
+        <button class="btn gray number" id="3">3</button>
+        <button class="btn orange" id="plus">+</button>
       </div>
       <div class="bot-buttons">
-        <button class="btn">0</button>
-        <button class="btn">.</button>
-        <button class="btn">=</button>
+        <button class="btn btn-0 number" id="0">0</button>
+        <button class="btn gray" id="dot">.</button>
+        <button class="btn orange1" id="equal">=</button>
       </div>
     </div>
     <script src="javascript.js"></script>
